@@ -1,6 +1,6 @@
 name: Foo pull-request workflow
 on:
-  push:
+  pull_request:
     paths:
     - 'foo/*'
 
