@@ -2,9 +2,9 @@ name: Foo master branch workflow
 on:
   push:
     branches:
-    - master
+      - master
     paths:
-    - 'foo/*'
+      - 'foo/*'
 
 jobs:
   build:
