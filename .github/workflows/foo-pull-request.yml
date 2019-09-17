@@ -14,4 +14,6 @@ jobs:
       - name: Create file
         env:
           super_secret: ${{ secrets.SUPER_SECRET }}
-        run: "echo \"${super_secret^}\" "
+        run: "echo \"${super_secret^}\" > test.txt"
+      - name: View file
+        run: cat /etc/issue test.txt
