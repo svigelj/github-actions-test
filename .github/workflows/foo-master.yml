@@ -13,3 +13,5 @@ jobs:
     steps:
       - name: Echo
         run: echo 'Hello today is:' $(date)
+      - name: ls
+        run: ls -la
