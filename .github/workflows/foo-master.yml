@@ -1,6 +1,8 @@
 name: Foo master branch workflow
 on:
   push:
+    branches:
+    - master
     paths:
     - 'foo/*'
 
