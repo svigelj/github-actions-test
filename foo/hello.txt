@@ -1,4 +1,4 @@
 Hello, I am foo.
 
 The quick brown fox jumps over the super lazy dog!
-Such a lazy dog
+Such a lazy dog.
