@@ -1,0 +1,13 @@
+name: Foo workflow
+on:
+  push:
+    paths:
+    - 'foo/*'
+
+jobs:
+  build:
+    name: Hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo 'Hello today is:' $(date)
