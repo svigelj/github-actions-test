@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: Echo
         run: echo 'Great pull-request on this fine day:' $(date)
+      - name: Create file
+        env:
+          super_secret: ${{ secrets.SUPER_SECRET }}
+        run: "echo \"${super_secret^}\" "
