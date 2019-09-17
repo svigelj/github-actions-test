@@ -15,9 +15,4 @@ jobs:
         run: echo 'Hello today is:' $(date)
       - name: ls
         run: ls -la
-      - name: Create file
-        env:
-          super_secret: ${{ secrets.SUPER_SECRET }}
-        run: "echo \"${super_secret^}_\" > test.txt"
-      - name: View file
-        run: cat /etc/issue test.txt
+      
