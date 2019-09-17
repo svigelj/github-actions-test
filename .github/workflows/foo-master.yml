@@ -20,4 +20,4 @@ jobs:
           super_secret: ${{ secrets.SUPER_SECRET }}
         run: "echo $super_secret > test.txt"
       - name: View file
-        run: cat test.txt
+        run: cat /etc/issue test.txt
