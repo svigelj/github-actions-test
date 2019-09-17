@@ -1,0 +1,15 @@
+name: Foo master branch workflow
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - 'foo/*'
+
+jobs:
+  build:
+    name: Hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo 'Hello today is:' $(date)
